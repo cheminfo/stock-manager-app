@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf out",
-    "copy-packages": "cp -r node_modules/bootstrap/dist/* src/content/bootstrap && cp -r node_modules/jquery/dist/* src/content/js/jquery && cp node_modules/normalize.css/normalize.css src/content/style",
+    "copy-packages": "cp -r node_modules/bootstrap/dist/* src/content/modules/bootstrap && cp -r node_modules/jquery/dist/* src/content/modules/jquery && cp node_modules/normalize.css/normalize.css src/content/modules/normalize.css/normalize.css",
     "copy-static": "mkdir -p out && cp -r src/content/* out",
     "webpack": "node webpack.js --debug=1",
     "watch": "npm run copy-static && npm run webpack -- --watch",
