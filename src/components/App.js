@@ -4,24 +4,20 @@ import React from 'react';
 import {slide as Menu} from 'react-burger-menu';
 import {BrowserRouter, Link, Router, Route, browserHistory, Match, Miss} from 'react-router';
 import {render} from 'react-dom';
-import Settings from './presentation/CameraPref.js';
+import Settings from './container/CameraPref';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import reducer from '../reducer/reducer.js';
-import actionCreator from '../actionCreator/actionCreator';
-import promiseMiddleware from 'redux-promise-middleware';
+import { listCameras } from '../actionCreator/actionCreator';
+import store from '../store';
 
-const store = createStore(reducer, applyMiddleware(promiseMiddleware));
 const routePrefix = '';
 
 class App extends React.Component {
     constructor() {
         super();
-        this.state = {};
 
         // Do some initialization stuff
         // get list of cameras
-        store.dispatch(actionCreator.listCameras());
+        store.dispatch(listCameras());
     }
 
     showSettings(event) {

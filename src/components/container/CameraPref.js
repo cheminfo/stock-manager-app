@@ -2,7 +2,7 @@
 
 import { connect } from 'react-redux';
 import CameraPref from '../presentation/CameraPref.js';
-import {switchCamera} from '../../actionCreator/actionCreator.js';
+import { switchCamera } from '../../actionCreator/actionCreator';
 
 const mapStateToProps = (state) => {
     return {

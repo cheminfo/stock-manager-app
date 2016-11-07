@@ -9,7 +9,8 @@
     "copy-static": "mkdir -p out && cp -r src/content/* out",
     "webpack": "node webpack.js --debug=1",
     "watch": "npm run copy-static && npm run webpack -- --watch",
-    "build": "npm run clean && npm run copy-packages && npm run copy-static && npm run webpack"
+    "build": "npm run clean && npm run copy-packages && npm run copy-static && npm run webpack",
+    "dev-server": "webpack-dashboard -- webpack-dev-server --inline --history-api-fallback --content-base out/"
   },
   "repository": {
     "type": "git",

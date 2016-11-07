@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,800);
 *,
 *:after,
 *:before {
@@ -12,8 +12,6 @@ html, body {
     overflow:hidden;
     margin: 0;
     padding: 0;
-    background: #444;
-    color: #fffce1;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
