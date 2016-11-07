@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import {createElement} from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App.js';
 
@@ -16,5 +16,5 @@ let props = {
     path: hash
 };
 
-let element = React.createElement(App, props);
+let element = createElement(App, props);
 ReactDOM.render(element, document.getElementById('stock-manager'));
