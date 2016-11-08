@@ -3,9 +3,7 @@
 function switchCamera(id) {
     return {
         type: 'SWITCH_CAMERA',
-        payload: {
-            cameraId: id
-        }
+        payload: id
     }
 }
 

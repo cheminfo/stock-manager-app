@@ -13,8 +13,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onChange: (id) => {
-            dispatch(switchCamera(id))
+        onChange: (option) => {
+            dispatch(switchCamera(option.value))
         }
     }
 };

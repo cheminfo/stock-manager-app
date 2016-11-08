@@ -6,7 +6,7 @@ const initialStore = {
 
 export default function reducer(store=initialStore, action) {
     switch(action.type) {
-        case 'CAMERA_CHANGED':
+        case 'SWITCH_CAMERA':
             return Object.assign({}, store, {cameraId: action.payload});
         case 'CAMERA_LIST_FULFILLED': {
             return Object.assign({}, store, {cameras: action.payload});

@@ -4,7 +4,7 @@ import React from 'react';
 import {slide as Menu} from 'react-burger-menu';
 import {BrowserRouter, Link, Router, Route, browserHistory, Match, Miss} from 'react-router';
 import {render} from 'react-dom';
-import Settings from './container/CameraPref';
+import Settings from './container/Settings';
 import { Provider } from 'react-redux';
 import { listCameras } from '../actionCreator/actionCreator';
 import store from '../store';
