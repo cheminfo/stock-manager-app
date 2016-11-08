@@ -1,7 +1,8 @@
 'use strict';
 
 import React, { PropTypes } from 'react';
-import {DropdownButton, MenuItem} from 'react-bootstrap';
+import Select from 'react-select';
+
 class CameraPref extends React.Component {
     constructor() {
         super();
@@ -9,27 +10,25 @@ class CameraPref extends React.Component {
 
     render() {
         console.log('render', this.props.cameras);
-        var menuItems = [];
-        for (let i = 0; i < this.props.cameras.length; i++) {
-            let camera = this.props.cameras[i];
-            menuItems.push(<MenuItem key={ camera.id } eventKey={ camera.id }>{ camera.label || ('Camera ' + (i + 1)) }</MenuItem>)
-        }
-        console.log(menuItems)
+        var options = this.props.cameras.map((camera, idx) => ({
+            label: camera.label || ('Camera ' + (idx + 1)),
+            value: camera.id
+        }));
+        console.log(options);
         return (
-                <DropdownButton onSelect={this.props.onSelect.bind(this)} id="dropdown-camera-list" title="Camera choice">
-                    { menuItems }
-                </DropdownButton>
+                <Select options={ options } onChange={this.props.onChange.bind(this)} name="dropdown-camera-list">
+                </Select>
         );
     }
 }
 
 CameraPref.defaultProps = {
     cameras: [],
-    onSelect: () => {}
+    onChange: () => {}
 };
 
 CameraPref.propTypes = {
     cameras: PropTypes.array.isRequired,
-    onSelect: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired
 };
 export default CameraPref;
