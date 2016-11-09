@@ -6,15 +6,15 @@ import { switchCamera } from '../../actionCreator/actionCreator';
 
 const mapStateToProps = (state) => {
     return {
-        cameraId: state.cameraId,
+        value: state.cameraId,
         cameras: state.cameras
     }
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onChange: (option) => {
-            dispatch(switchCamera(option.value))
+        onChange: (id) => {
+            dispatch(switchCamera(id))
         }
     }
 };

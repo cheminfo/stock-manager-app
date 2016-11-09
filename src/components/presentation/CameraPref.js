@@ -16,7 +16,7 @@ class CameraPref extends React.Component {
         }));
         console.log(options);
         return (
-                <Select options={ options } onChange={this.props.onChange.bind(this)} name="dropdown-camera-list">
+                <Select options={ options } clearable={false} onChange={this.props.onChange.bind(this)} name="dropdown-camera-list" value={this.props.value}>
                 </Select>
         );
     }

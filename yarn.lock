@@ -804,7 +804,7 @@ chokidar@^1.0.0:
   optionalDependencies:
     fsevents "^1.0.0"
 
-classnames@^2.1.1, classnames@^2.2.4:
+classnames@^2.1.1, classnames@^2.2.0:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -2319,9 +2319,9 @@ react-dom:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.3.2.tgz#c46b0aa5380d7b838e7a59c4a7beff2ed315531f"
 
-react-input-autosize@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-1.1.0.tgz#3fe1ac832387d8abab85f6051ceab1c9e5570853"
+react-input-autosize@^0.6.2:
+  version "0.6.13"
+  resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-0.6.13.tgz#386ff7a9d2c3dc016c265bf2e59d397050f65af7"
 
 react-redux:
   version "4.4.5"
@@ -2341,12 +2341,12 @@ react-router@v4.0.0-alpha.5:
     query-string "4.2.3"
     react-broadcast "^0.1.1"
 
-react-select:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/react-select/-/react-select-1.0.0-rc.2.tgz#9fc11b149a3dc1ac831289d21b40a59742f82f8d"
+react-select@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/react-select/-/react-select-0.9.1.tgz#e322a2d0a06396a48206b0553df5ec47d16083ba"
   dependencies:
-    classnames "^2.2.4"
-    react-input-autosize "^1.1.0"
+    classnames "^2.2.0"
+    react-input-autosize "^0.6.2"
 
 readable-stream@^1.0.27-1, readable-stream@^1.1.13:
   version "1.1.14"

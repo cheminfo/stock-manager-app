@@ -15,8 +15,12 @@ html, body {
     font-family: 'Raleway', Arial, sans-serif;
 }
 
+.main-container {
+    margin: 15px;
+}
+
 .header-space {
-    height: 80px;
+    height: 65px;
 }
 
 /* Position and sizing of burger button */

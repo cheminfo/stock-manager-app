@@ -11,7 +11,7 @@ export default class Settings extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="main-container">
                 <div className="header-space"></div>
                 <div className="card">
                     <div className="card-block">
