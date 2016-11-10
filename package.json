@@ -50,6 +50,7 @@
     "react-select": "^0.9.1",
     "redux": "^3.6.0",
     "redux-burger-menu": "^0.0.5",
+    "redux-persist": "^4.0.0-alpha7",
     "redux-promise-middleware": "^4.1.0",
     "superagent": "^2.3.0"
   }

@@ -1,6 +1,7 @@
 'use strict';
 
 function switchCamera(id) {
+    console.log('camera id', id);
     return {
         type: 'SWITCH_CAMERA',
         payload: id

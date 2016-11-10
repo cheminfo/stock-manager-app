@@ -1768,7 +1768,7 @@ json-schema@0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
 
-json-stringify-safe@~5.0.1:
+json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
@@ -1831,11 +1831,11 @@ lockr:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/lockr/-/lockr-0.8.4.tgz#7614f9c7c98a60bc4ac45f44567d1d03d8fb493c"
 
-lodash, lodash@^4.16.2, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
+lodash, lodash@^4.11.1, lodash@^4.16.2, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
   version "4.16.6"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"
 
-lodash-es@^4.2.1:
+lodash-es@^4.16.0, lodash-es@^4.2.1:
   version "4.16.6"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.16.6.tgz#c8552faedaa4d1d591de8da9b3980ef1c52efa08"
 
@@ -2341,7 +2341,7 @@ react-router@v4.0.0-alpha.5:
     query-string "4.2.3"
     react-broadcast "^0.1.1"
 
-react-select@0.9.1:
+react-select@^0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-0.9.1.tgz#e322a2d0a06396a48206b0553df5ec47d16083ba"
   dependencies:
@@ -2390,6 +2390,14 @@ redux:
 redux-burger-menu:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/redux-burger-menu/-/redux-burger-menu-0.0.5.tgz#14a099333d7bcbeb9c922ba6f2bac798530396eb"
+
+redux-persist:
+  version "4.0.0-alpha7"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-4.0.0-alpha7.tgz#d05f53f4910127fba8a82898c02ac84e7c38a4ea"
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lodash "^4.11.1"
+    lodash-es "^4.16.0"
 
 redux-promise-middleware:
   version "4.1.0"
